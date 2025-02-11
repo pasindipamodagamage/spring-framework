@@ -4,6 +4,7 @@ package lk.ijse.config;
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -24,6 +25,7 @@ import java.sql.DriverManager;
 
 @Configuration
 @EnableTransactionManagement
+@EnableJpaRepositories(basePackages = "lk.ijse.repository")
 public class JPAConfig {
     @Bean
         public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean

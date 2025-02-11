@@ -16,11 +16,18 @@
         <option value="$PROJECT_DIR$/_10_Back_End/pom.xml" />
         <option value="$PROJECT_DIR$/_11_Front_end/pom.xml" />
         <option value="$PROJECT_DIR$/_12_Spring_Data_JPA/pom.xml" />
+        <option value="$PROJECT_DIR$/_13_Spring_Boot/pom.xml" />
+        <option value="$PROJECT_DIR$/_14_Spring_Boot/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/_13_SpringBoot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/_11_Front_end/pom.xml" />
+        <option value="$PROJECT_DIR$/_13_Spring_Boot/pom.xml" />
+        <option value="$PROJECT_DIR$/_14_Spring_Boot/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
