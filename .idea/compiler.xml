@@ -10,6 +10,7 @@
         <module name="_08_Spring_Web_MVC" />
         <module name="_10_Back_End" />
         <module name="_06_Runtime_Value_Injection" />
+        <module name="_12_Spring_Data_JPA" />
         <module name="_01_Spring_Core" />
         <module name="_09_RestController" />
         <module name="_02_Spring_Life_Cycle" />

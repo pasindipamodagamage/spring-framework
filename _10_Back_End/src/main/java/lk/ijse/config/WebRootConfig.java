@@ -3,10 +3,11 @@ package lk.ijse.config;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Author: pasindi
- * Date: 1/29/25
- * Time: 1:56 PM
- */
+ * Author: Pasindi
+ * Date: 2025-02-05
+ * Time: 10:55 AM
+*/
+
 @Configuration
 public class WebRootConfig {
 }

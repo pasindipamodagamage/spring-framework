@@ -5,13 +5,11 @@ import lk.ijse.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Author: pasindi
- * Date: 1/29/25
- * Time: 1:51 PM
+ * Author: Pasindi
+ * Date: 2025-02-05
+ * Time: 10:54 AM
  */
-
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
@@ -22,7 +20,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{
-                WebAppConfig.class
+            WebAppConfig.class
         };
     }
 

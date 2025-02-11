@@ -1,23 +1,27 @@
 package lk.ijse.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 /**
- * Author: pasindi
- * Date: 1/29/25
- * Time: 1:56 PM
- */
+ * Author: Pasindi
+ * Date: 2025-02-05
+ * Time: 10:55 AM
+*/
+
 @Configuration
-@ComponentScan(basePackages = "lk.ijse.controller")
+@ComponentScan("lk.ijse.controller")
 @EnableWebMvc
-
-public class WebAppConfig{
-
+public class WebAppConfig implements WebMvcConfigurer {
+//    @Override
+//    public void addCorsMappings(CorsRegistry registry) {
+//        registry.addMapping("api/v1/customer/**")
+//                .allowedOrigins("*")
+//                .allowedMethods("GET","POST","PUT","DELETE","OPTION")
+//                .allowCredentials(true)
+//                .allowedHeaders("*");
+//    }
 }
