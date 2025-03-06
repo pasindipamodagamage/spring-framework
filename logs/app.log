@@ -1,0 +1,32 @@
+2025-03-05T11:46:16.591+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : Starting Application using Java 17.0.10 with PID 39292 (D:\spring-framework\_17_SpringBoot_Logins\target\classes started by User in D:\spring-framework)
+2025-03-05T11:46:16.595+05:30 DEBUG 39292 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T11:46:16.597+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T11:46:18.124+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-05T11:46:18.147+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-05T11:46:18.148+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05T11:46:18.207+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-05T11:46:18.208+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1523 ms
+2025-03-05T11:46:18.790+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-05T11:46:18.804+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : Started Application in 3.622 seconds (process running for 4.738)
+2025-03-05T11:48:02.053+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05T11:48:02.054+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-05T11:48:02.055+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-05T11:49:00.688+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05T11:49:00.846+05:30  INFO 39292 --- [_17_SpringBoot_Logins] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-05T11:50:54.123+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : Starting Application using Java 17.0.10 with PID 35916 (D:\spring-framework\_17_SpringBoot_Logins\target\classes started by User in D:\spring-framework)
+2025-03-05T11:50:54.125+05:30 DEBUG 35916 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T11:50:54.126+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T11:50:55.033+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-05T11:50:55.047+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-05T11:50:55.048+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05T11:50:55.102+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-05T11:50:55.103+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 929 ms
+2025-03-05T11:50:55.439+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-05T11:50:55.450+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [main] l.i._17_springboot_logins.Application    : Started Application in 1.974 seconds (process running for 2.74)
+2025-03-05T11:51:00.849+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05T11:51:00.849+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-05T11:51:00.850+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-05T11:51:00.886+05:30 DEBUG 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] l.i._.controller.DemoController          : This is a Debug Log
+2025-03-05T11:51:00.886+05:30  INFO 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] l.i._.controller.DemoController          : This is a Info Log
+2025-03-05T11:51:00.886+05:30 ERROR 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] l.i._.controller.DemoController          : This is a Error Log
+2025-03-05T11:51:00.886+05:30  WARN 35916 --- [_17_SpringBoot_Logins] [http-nio-8080-exec-1] l.i._.controller.DemoController          : This is a Warn Log

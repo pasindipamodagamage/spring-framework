@@ -1,0 +1,158 @@
+body {
+  background-color: #ececec;
+  color: #5a5959;
+}
+
+.table thead {
+  background: linear-gradient(to right, #5c618e, #8b94a5) !important;
+  color: black;
+
+}
+
+.table thead tr td{
+  background: linear-gradient(to right, #5c618e, #8b94a5) !important;
+  color: beige;
+  text-align: center;
+}
+.table tbody tr td {
+  background-color: rgba(202, 203, 204, 0.82);!important;
+  color: black !important;
+  text-align: center;
+}
+.btn{
+  background-color: #21aabf;
+  border: 1px solid rgba(47, 49, 82, 0.89);
+  color: white;
+}
+.btn:hover{
+  background-color: rgb(66, 27, 41);
+  color: #ffffff;
+  border: 1px solid #27b217;
+}
+
+.btn-update{
+  background-color: rgba(26, 56, 52, 0.71);
+  border: 1px solid rgba(13, 126, 33, 0.71);
+  color: white;
+}
+.btn-update:hover{
+  background-color: rgb(39, 178, 23);
+  color: #ffffff;
+  border: 1px solid #1c251b;
+}
+.btn-delete{
+  background-color: rgb(147, 140, 33);
+  border: 1px solid rgb(124, 116, 19);
+  color: white;
+}
+.btn-delete:hover{
+  background-color: rgb(211, 194, 103);
+  color: #ffffff;
+  border: 1px solid #756b44;
+}
+.table-bordered {
+  border-color: #7e7e7e !important;
+  box-shadow: 0 0 12px rgb(201, 194, 185);
+}
+#addBtn{
+  position: relative;
+  left: 90%;
+  margin-top: 4%;
+}
+h1{
+  /*-webkit-text-stroke: 1px #ae315e;*/
+  color: #3a4f5c;
+  font-size: 60px;
+}
+.modal-content{
+  background-color: #dddbdb;
+  padding: 10%;
+  border: 1px solid #232323;
+}
+.form-control{
+  background-color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  /*margin-left: 7%;*/
+}
+h2{
+  margin-bottom: 8%;
+  /*-webkit-text-stroke: 0.7px #6e3536;*/
+  color: black;
+  font-size: 40px;
+  text-align: center;
+
+}
+#btn_save_customer,
+#btn_update_customer{
+  padding: 2% 10%;
+  position: relative;
+  left: 35%;
+  margin-top: 3%;
+}
+#btn_update_customer{
+  left: 32% !important;
+}
+.box-container{
+  display: flex;
+}
+/*#name{*/
+/*  margin-left: 13%;*/
+/*}*/
+/*#age{*/
+/*  margin-left: 17%;*/
+/*}*/
+.box-label{
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ededed;
+  text-align: center;
+  padding-top: 3%;
+  color: #1a1d21;
+  background-color: #ffffff;
+  border-radius: 5px;
+
+}
+.form-control[type="file"] {
+  color: white;
+  padding: 6px;
+}
+
+/* Remove default file input styling */
+.form-control[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0;
+}
+
+/* Custom file input button */
+.form-control[type="file"]::before {
+  content: 'Choose File';
+  display: inline-block;
+  background: #2a2a2a;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+  height: 38px;
+}
+
+/* Hover state */
+.form-control[type="file"]:hover::before {
+  background-color: #3a3a3a;
+}
+
+/* Active state */
+.form-control[type="file"]:active::before {
+  background-color: #2a2a2a;
+}
+.form-control:focus {
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff; /* White text */
+  border-color: #f3f1f1; /* Red border to match your theme */
+  box-shadow: 0 0 0 0.2rem rgba(133, 132, 132, 0.25); /* Red glow effect */
+}
