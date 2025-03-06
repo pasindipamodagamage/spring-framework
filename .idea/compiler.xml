@@ -21,6 +21,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="_11_Front_End" target="17" />
+      <module name="_13_SpringBoot" target="17" />
+      <module name="_15_Spring_Security" target="17" />
+      <module name="_16_SpringBoot_Bean_Validation" target="17" />
+      <module name="_17_SpringBoot_Logins" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
