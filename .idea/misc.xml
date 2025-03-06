@@ -16,23 +16,14 @@
         <option value="$PROJECT_DIR$/_10_Back_End/pom.xml" />
         <option value="$PROJECT_DIR$/_11_Front_end/pom.xml" />
         <option value="$PROJECT_DIR$/_12_Spring_Data_JPA/pom.xml" />
-        <option value="$PROJECT_DIR$/_13_Spring_Boot/pom.xml" />
-        <option value="$PROJECT_DIR$/_14_Spring_Boot/pom.xml" />
-        <option value="$PROJECT_DIR$/untitled/pom.xml" />
-        <option value="$PROJECT_DIR$/_13_SpringBoot/pom.xml" />
-        <option value="$PROJECT_DIR$/_15_Spring_Security/pom.xml" />
-        <option value="$PROJECT_DIR$/_16_SpringBoot_Bean_Validation/pom.xml" />
-        <option value="$PROJECT_DIR$/_17_SpringBoot_Logins/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/_11_Front_end/pom.xml" />
-        <option value="$PROJECT_DIR$/_13_Spring_Boot/pom.xml" />
-        <option value="$PROJECT_DIR$/_14_Spring_Boot/pom.xml" />
-        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
