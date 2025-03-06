@@ -1,0 +1,281 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customer.html">customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="item.html">item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Order.html">Order</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+  <h1 class="text-center">Customer Manage</h1>
+  <hr/>
+
+  <button id="addBtn" type="button" class="btn  mb-3 text-right" data-bs-toggle="modal"
+          data-bs-target="#customerModal">
+    Add Customer
+  </button>
+
+  <!--     add customer modal-->
+  <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container m-2">
+          <form>
+            <h2>ADD CUSTOMER</h2>
+            <div class="mb-4 box-container">
+              <div class="box-label">
+                <label for="id" class="form-label">ID</label>
+              </div>
+              <input type="text" class="form-control" id="id">
+            </div>
+            <div class="mb-4 box-container">
+              <div class="box-label">
+                <label for="name" class="form-label">  NAME</label>
+              </div>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-4 box-container">
+              <div class="box-label">
+                <label for="address" class="form-label"> ADDRESS</label>
+              </div>
+              <input type="text" class="form-control" id="address">
+            </div>
+            <div class="mb-4 box-container">
+              <div class="box-label">
+                <label for="image" class="form-label">IMAGE</label>
+              </div>
+              <input type="file" class=" form-control circular-file-input" id="image" accept="image/*" name="image">
+            </div>
+            <button id="btn_save_customer" type="submit" class="btn btn-primary" >Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Update student Modal -->
+  <div class="modal fade" id="updateCustomerModal" tabindex="-1" aria-labelledby="updateCustomerModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container m-2">
+          <form>
+            <h2>UPDATE CUSTOMER</h2>
+            <div class="mb-3 box-container">
+              <div class="box-label">
+                <label for="id" class="form-label">ID</label>
+              </div>
+              <input type="text" class="form-control" id="updated_customer_id" readonly>
+            </div>
+            <div class="mb-3 box-container">
+              <div class="box-label">
+                <label for="name" class="form-label">  NAME</label>
+              </div>
+              <input type="text" class="form-control" id="updated_name">
+            </div>
+            <div class="mb-3 box-container">
+              <div class="box-label">
+                <label for="address" class="form-label"> ADDRESS</label>
+              </div>
+              <input type="text" class="form-control" id="updated_address">
+            </div>
+            <div class="mb-4 box-container">
+              <div class="box-label">
+                <label for="image" class="form-label">IMAGE</label>
+              </div>
+              <input type="file" class=" form-control circular-file-input" id="Updateimage" accept="image/*" name="image">
+            </div>
+
+            <button id="btn_update_customer" type="submit" class="btn btn-warning">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead >
+    <tr>
+      <!--      <td>Profile</td>-->
+      <td>ID</td>
+      <td>Name</td>
+      <td>Address</td>
+      <td>Update</td>
+      <td>Delete</td>
+
+    </tr>
+    </thead>
+    <tbody id="customer_table_body">
+
+    </tbody>
+  </table>
+</div>
+
+<!--<section id="item">-->
+<div class="container mt-5">
+  <h1 class="text-center">Item Manage</h1>
+  <hr/>
+
+  <button id="add-item-Btn" type="button" class="btn  mb-3 text-right" data-bs-toggle="modal"
+          data-bs-target="#itemModal">
+    Add Item
+  </button>
+
+  <!--     add item modal-->
+  <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <h2>ADD ITEM</h2>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="id" class="form-label">ID</label>
+            </div>
+            <input type="text" class="form-control" id="item_Id">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="name" class="form-label">  NAME</label>
+            </div>
+            <input type="text" class="form-control" id="item_name">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="item_description" class="form-label"> DESCRIPTION</label>
+            </div>
+            <input type="text" class="form-control" id="item_description">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="item_Qty" class="form-label"> QTY</label>
+            </div>
+            <input type="number" class="form-control" id="item_qty">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="item_price" class="form-label"> QTY</label>
+            </div>
+            <input type="number" class="form-control" id="item_price">
+          </div>
+          <button id="btn_save_item" type="submit" class="btn btn-primary" >Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Update item Modal -->
+<div class="modal fade" id="updateitemModal" tabindex="-1" aria-labelledby="updateCustomerModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="container m-2">
+        <form>
+          <h2>UPDATE ITEM</h2>
+          <div class="mb-3 box-container">
+            <div class="box-label">
+              <label for="id" class="form-label">ID</label>
+            </div>
+            <input type="text" class="form-control" id="updated_item_id" readonly>
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="name" class="form-label">  NAME</label>
+            </div>
+            <input type="text" class="form-control" id="updated_item_name">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="item_description" class="form-label"> DESCRIPTION</label>
+            </div>
+            <input type="text" class="form-control" id="updated_item_description">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="item_Qty" class="form-label"> QTY</label>
+            </div>
+            <input type="number" class="form-control" id="updated_item_qty">
+          </div>
+          <div class="mb-4 box-container">
+            <div class="box-label">
+              <label for="item_price" class="form-label"> QTY</label>
+            </div>
+            <input type="number" class="form-control" id="updated_item_price">
+          </div>
+          <button id="btn_update_item" type="submit" class="btn btn-warning">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table class="table table-bordered">
+  <thead >
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Description</td>
+    <td>Qty</td>
+    <td>Unit Price</td>
+    <td>Update</td>
+    <td>Delete</td>
+  </tr>
+  </thead>
+  <tbody id="item_table_body">
+
+  </tbody>
+</table>
+</div>
+
+<!--</section>-->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/customer.js"></script>
+<script src="js/item.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
